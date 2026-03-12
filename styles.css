@@ -1,0 +1,203 @@
+/* Reset / base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #eeeeee;
+  background-image: url("img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center; /* horizontal centering */
+  align-items: center; /* vertical centering */
+  min-height: 100vh;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Layout */
+header,
+main,
+footer {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Simple nav */
+nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.checkbox input {
+  display: none;
+}
+
+.checkmark {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #777;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.checkbox input:checked + .checkmark {
+  background-color: #ffff00;
+  border-color: #ffff00;
+}
+
+.checkbox input:checked + .checkmark::after {
+  content: "✓";
+  color: #333;
+  font-size: 14px;
+}
+
+/* Flexbox */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.1); /* semi-transparent */
+  backdrop-filter: blur(12px); /* frosted effect */
+  -webkit-backdrop-filter: blur(12px); /* Safari */
+  border-radius: 16px;
+  max-width: 1000px;
+  margin-top: 1rem; /* small gap between header and cards */
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* soft shadow for depth */
+}
+
+.card {
+  background-color: #3f3f3f;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  min-width: 250px; /* prevent cards from getting too narrow */
+
+  background-image: url("img/card-logo.png");
+  background-size: 50%;
+  background-position: calc(100% - 10px) 15px;
+  background-repeat: no-repeat;
+}
+
+.card h2 {
+  margin-bottom: 0.75rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.75);
+  padding: 0.5rem 4rem; /* top/bottom | left/right */
+  position: relative;
+  top: 15px; /* down */
+  left: -60px; /* left */
+}
+
+.card-header {
+  background-color: #3f3f3f;
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* h1 left, button right */
+  flex-wrap: wrap; /* wraps on small screens */
+  gap: 1rem; /* space between h1 and button */
+
+  background-image: url("img/header-logo.png");
+  background-size: 85%;
+  background-position: left -10px;
+  background-repeat: no-repeat;
+}
+
+.reset-btn {
+  background-color: #ffff00;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 0.6rem;
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+  transition: background 0.2s;
+}
+
+.reset-btn:hover {
+  background-color: #ffcc00;
+}
+
+.header-wrapper {
+  display: grid;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.1); /* semi-transparent */
+  backdrop-filter: blur(12px); /* frosted effect */
+  -webkit-backdrop-filter: blur(12px); /* Safari */
+  border-radius: 16px;
+  max-width: 1000px;
+  margin: 0; /* spacing handled by page-wrapper */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* soft shadow for depth */
+}
+
+.inline-emoji {
+  display: inline-block;
+  width: 1.4em;            /* slightly bigger than text */
+  height: 1.4em;           /* slightly bigger than text */
+  background-image: url('img/check.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;   /* keeps it aligned with text */
+}
+
+.inline-emoji-aero {
+  display: inline-block;
+  width: 1.6em;            /* slightly bigger than text */
+  height: 1.6em;           /* slightly bigger than text */
+  background-image: url('img/check.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;   /* keeps it aligned with text */
+}
+
+/* Text highlights go here */
+.yellow-highlight {
+  color: #ffff00;
+}
+
+.cyan-highlight {
+  color: #00ffff;
+}
+
+.pink-highlight {
+  color: #ff00f0;
+}
+
+.green-highlight {
+  color: #00ffa2;
+}
