@@ -7,7 +7,6 @@ Check it out here: [Arknights: Endfield Tracker](https://alex-jns.github.io/endf
 # Features
 
 - Track daily activities
-- Reminds you of other time gated content
 - Lightweight: no backend, just HTML and JS
 - Easy to use and portable; works offline too
 
