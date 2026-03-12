@@ -2,7 +2,7 @@
 
 A simple HTML + JavaScript tracker for Arknights: Endfield that helps you log and monitor your in-game activities. Keep track of daily missions and task reminders with minimal setup — just open the HTML in your browser!
 
-Check it out here: [Arknights: Endfield Tracker]([https://username.github.io/my-website/](https://alex-jns.github.io/endfield-tracker/))
+Check it out here: [Arknights: Endfield Tracker](https://alex-jns.github.io/endfield-tracker/)
 
 # Features
 
